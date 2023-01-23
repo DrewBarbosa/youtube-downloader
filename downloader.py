@@ -1,6 +1,6 @@
 from pytube import YouTube
 
-SAVE_PATH = "C:\\Users\\famil\\Desktop"
+SAVE_PATH = "" // Your destination file, remember to add double back slash \\. Example ("C:\\")
 
 
 def download():

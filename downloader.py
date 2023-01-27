@@ -1,12 +1,13 @@
 from pytube import YouTube
+import os
 
-SAVE_PATH = "" # Your destination file, remember to add double back slash \\. Example ("C:\\")
+SAVE_PATH = f"C:\\Users\\{os.getlogin()}\\Desktop\\yt-downloader"
 
 
 def download():
     global SAVE_PATH
 
-    link = []
+    link = ["https://www.youtube.com/watch?v=-VFG-Tp6QvE"]
 
     if link == [] or link == None:
         return print("No video to download")
@@ -24,3 +25,5 @@ def download():
         except:
             print("Some Error!")
     print("Task Completed!")
+
+download()

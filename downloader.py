@@ -25,5 +25,6 @@ def download():
         except:
             print("Some Error!")
     print("Task Completed!")
+    link = ""
 
 download()

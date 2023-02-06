@@ -1,13 +1,13 @@
 from pytube import YouTube
-import os
+from os import getlogin
 
-SAVE_PATH = f"C:\\Users\\{os.getlogin()}\\Desktop\\yt-downloader"
+SAVE_PATH = f"C:\\Users\\{getlogin()}\\Desktop\\yt-downloader"
 
 
 def download():
     global SAVE_PATH
 
-    link = ["https://www.youtube.com/watch?v=-VFG-Tp6QvE"]
+    link = [""]
 
     if link == [] or link == None:
         return print("No video to download")
